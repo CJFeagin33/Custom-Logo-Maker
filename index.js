@@ -1,8 +1,12 @@
+// Importing all the required materials to make this page run
+
 const inquirer = require('inquirer');
 const fs = require('fs');
 const Circle = require('./lib/Circle.js');
 const Triangle = require('./lib/Triangle.js');
 const Square = require('./lib/Square.js');
+
+// Inquirer for user input
 
 inquirer
     .prompt([
@@ -27,6 +31,9 @@ inquirer
             message: "Please enter your desired logoShape Color. This can be a color's name or a hexadecimal.",
             name: 'logoShapeColor',
         },
+
+    // Puts data obtained through inquirer into an if statement determing which Class.render() will be used
+
     ]).then(data => {
         if (data.logoShape === 'Circle') {
             logoGenerated = new Circle(data.logoTxt, data.logoTxtColor, data.logoShapeColor).render();
