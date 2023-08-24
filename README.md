@@ -29,7 +29,7 @@ In order to install the propper programs necessary for this application, run npm
 
 In order to use this program, run node index within the integrated terminal for the index.js file. Go through the user input to fill out a desirable logo.svg.
 
-Here is a link to a video of me using this program: 
+Here is a link to a video of me using this program: https://drive.google.com/file/d/1avhrWeUzDKKJV4FZZ30Csd0wxggvJotr/view
 
 ## How to Contribute
 
